@@ -1,5 +1,5 @@
 # st version
-VERSION = 0.8.4
+VERSION = 0.9
 
 # Customize below to fit your system
 
@@ -9,6 +9,7 @@ MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/include/X11
 X11LIB = /usr/include/X11
+
 
 PKG_CONFIG = pkg-config
 
@@ -22,7 +23,7 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\
 
 # flags
 STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
-STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS) -O2 -fomit-frame-pointer
+STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
 STLDFLAGS = $(LIBS) $(LDFLAGS)
 
 # OpenBSD:
@@ -30,6 +31,7 @@ STLDFLAGS = $(LIBS) $(LDFLAGS)
 #LIBS = -L$(X11LIB) -lm -lX11 -lutil -lXft \
 #       `$(PKG_CONFIG) --libs fontconfig` \
 #       `$(PKG_CONFIG) --libs freetype2`
+#MANPREFIX = ${PREFIX}/man
 
 # compiler and linker
 # CC = c99

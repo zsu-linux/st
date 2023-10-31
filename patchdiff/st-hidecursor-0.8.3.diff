@@ -85,3 +85,4 @@ index e5f1737..7e759b0 100644
 +
  	if (IS_SET(MODE_KBDLOCK))
  		return;
+
