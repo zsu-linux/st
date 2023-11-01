@@ -251,8 +251,8 @@ static Shortcut shortcuts[] = {
     {MODKEY, XK_l, copyurl, {.i = 0}},
     {ControlMask, XK_l, copyurl, {.i = 1}},
     {MODKEY, XK_y, externalpipe, {.v = copyurlcmd}},
-    {ControlMask, XK_apostrophe, externalpipe, {.v = copyoutput}},
-    {MODKEY, XK_apostrophe, externalpipe, {.v = openurlcmd}},
+    {MODKEY, XK_semicolon, externalpipe, {.v = copyoutput}},
+    {MODKEY, XK_o, externalpipe, {.v = openurlcmd}},
 
 };
 
