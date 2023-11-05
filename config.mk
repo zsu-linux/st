@@ -7,9 +7,8 @@ VERSION = 0.9
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
-X11INC = /usr/include/X11
-X11LIB = /usr/include/X11
-
+X11INC = /usr/include/hyprland
+X11LIB = /usr/lib/hyprland
 
 PKG_CONFIG = pkg-config
 
